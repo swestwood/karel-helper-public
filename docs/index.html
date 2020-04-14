@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Karel Helper</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./lib/flexbox.css" />
+    <link rel="stylesheet" type="text/css" href="./mixins.css" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <script data-goatcounter="https://karelhelper.goatcounter.com/count"
+    async src="//gc.zgo.at/count.js"></script>
+    <script src="./lib/umbrella.min.js"></script>
+    <script src="./index.min.js"></script>
+</head>
+
+<body>
+  <div class="laser-pointer"></div>
+  <div class="header">
+    <img class="header-image" height=120 src='./images/planning.svg'/>
+    <div class="header-text">
+      <div class="page-title">Karel Helper</div>
+      <div class="header-description">
+        <div>Move Karel around to think through your program.</div>
+        <div>Explain, plan, and visualize your ideas.</div>
+      </div>
+    </div>
+    <div class="endorsement-quote">
+      <div class="open-quote">“</div>
+      It's even better than graph paper!
+      <div class="close-quote">”</div>
+      <div class="dash-quote"></div>
+      <div class="endorsement-quote-attribution">Random Section Leader, 2020</div>
+    </div>
+  </div>
+  <div class="content-container">
+    <div class="errors"></div>
+    <div class="content">
+      <div class="sidebar">
+        <div class="section-title">Make Karel Do Stuff</div>
+        <div class="command-section">
+          <div class="controls-section karel-controls">
+            <div class="place-karel-button"><img height=30 src='./images/karel.svg'/></div>
+            <div class="karel-explanation-wrapper explanation-wrapper">Click the map to move Karel, or use the commands below.</div>
+            <!-- <div>Double click to have Karel follow your mouse (click to stop)</div> -->
+          </div>
+          <button class="button-move">move() <span class="shortcut">f</span></button>
+          <button class="button-turn-left">turn_left() <span class="shortcut">d</span></button>
+          <div class="extra-turn-buttons">
+            <button class="button-turn-right">turn_right() <span class="shortcut">s</span></button>
+            <button class="button-turn-around">turn_around() <span class="shortcut">a</span></button>
+          </div>
+          <div class="beeper-commands">
+            <button class="button-put-beeper">put_beeper() <span class="shortcut">r</span></button>
+            <button class="button-pick-beeper">pick_beeper() <span class="shortcut">e</span></button>
+          </div>
+          <div class="controls-section beeper-bag-section">
+            <input class="beepers-in-bag-count" type="text" size=8></input>
+            <div class="beeper-bag-label">beepers in bag</div>
+          </div>
+        </div>
+
+        <div class="world-controls">
+          <div class="section-title">Change Karel's World</div>
+          <div class="controls-section">
+            <div class="choose-world-wrapper">
+              <div class="explanation-wrapper">Choose or upload a world: </div>
+              <select class="select-available-world" size=1></select>
+              <input type="file" class="upload-map" accept=".w">
+            </div>
+          </div>
+          <div class="controls-section">
+            <div class="explanation-wrapper">
+              Click a button then click the map to add beepers and walls.
+            </div>
+          </div>
+          <div class="controls-section condensed">
+            <div class="place-beeper-button"></div>
+            <div class="beeper-buttons-wrapper">
+              <button class="add-beeper-button">Add beepers</button>
+              <button class="remove-beeper-button">Remove beepers</button>
+            </div>
+          </div>
+          <div class="controls-section">
+            <div class="place-wall-button condensed"></div>
+            <div class="wall-buttons-wrapper">
+              <button class="add-wall-button">Add walls</button>
+              <button class="remove-wall-button">Remove walls</button>
+            </div>
+          </div>
+          <div class="controls-section">
+            <div class="dimensions-input">
+              <div class="dimension-input">Rows <input type="text" class="world-height" size=4></input></div>
+              <div class="dimension-input">Cols <input type="text" class="world-width" size=4></input></div>
+            </div>
+            <button class="update-world-size-button">Set dimensions</button>
+          </div>
+        </div>
+        <div class="bonus-controls">
+          <div class="section-title">Bonus</div>
+          <div class="controls-section">
+            <div class="bonus-buttons">
+              <button class="laser-button">Laser pointer <span class="shortcut">g</span></button>
+              <button class="highlight-squares">Highlighter <span class="shortcut">h</span></button>
+            </div>
+          </div>
+          <div class="footer-content">
+            <p><a href="https://compedu.stanford.edu/karel-reader/docs/python/en/chapter1.html" target="_blank">Karel the Robot</a> is used in <a href="https://engineering.stanford.edu/news/free-coding-education-time-covid-19" target="_blank">CS106A Code in Place</a> and other intro programming courses.</p>
+            <p>Karel Helper is an interactive tool where students and teachers can visualize problem-solving approaches, even remotely. Send bugs or feature requests <a href="https://github.com/swestwood/karel-helper-public/issues" target="_blank">here</a>!</p>
+          </div>
+        </div>
+      </div>
+      <div class="world-wrapper">
+        <div class="world">
+          <!-- Landscape must be the first child -->
+          <div class="landscape"></div>
+          <div class="beepers"></div>
+          <div class="walls"></div>
+          <div class="karel"><img height=46 src='./images/karel.svg'/><div class="karel-arrow"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
