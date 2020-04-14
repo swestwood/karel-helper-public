@@ -2,16 +2,30 @@
 <head>
     <meta charset="utf-8">
     <title>Karel Helper</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="./lib/flexbox.css" />
     <link rel="stylesheet" type="text/css" href="./mixins.css" />
     <link rel="stylesheet" type="text/css" href="./index.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163548501-1"></script>
+    <script>
+      var host = window.location.hostname;
+      if (host == "localhost") {
+        window['ga-disable-UA-163548501-1'] = true;
+      }
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-163548501-1');
+    </script>
+
     <script src="./lib/umbrella.min.js"></script>
     <script src="./index.min.js"></script>
 </head>
 
 <body>
   <div class="header">
-    <img class="header-image" height=120 src='images/planning.svg'/>
+    <img class="header-image" height=120 src='./images/planning.svg'/>
     <div class="header-text">
       <div class="page-title">Karel Helper</div>
       <div class="header-description">
@@ -34,7 +48,7 @@
         <div class="section-title">Make Karel Do Stuff</div>
         <div class="command-section">
           <div class="controls-section karel-controls">
-            <div class="place-karel-button"><img height=30 src='images/karel.svg'/></div>
+            <div class="place-karel-button"><img height=30 src='./images/karel.svg'/></div>
             <div class="karel-explanation-wrapper">Click the map to move Karel.</div>
             <!-- <div>Double click to have Karel follow your mouse (click to stop)</div> -->
           </div>
@@ -83,7 +97,7 @@
           <div class="landscape"></div>
           <div class="beepers"></div>
           <div class="walls"></div>
-          <div class="karel"><img height=50 src='images/karel.svg'/><div class="karel-arrow"></div></div>
+          <div class="karel"><img height=50 src='./images/karel.svg'/><div class="karel-arrow"></div></div>
         </div>
       </div>
     </div>
