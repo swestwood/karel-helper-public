@@ -442,18 +442,17 @@ button.ongoing {
   top: 0px;
 }
 .karel img {
-  margin-left: -4px;
-  margin-top: 1px;
+  margin-top: 3px;
 }
 .karel-arrow {
   width: 0;
   height: 0;
   position: relative;
-  border-top: 10px solid transparent;
-  border-left: 11px solid #0084d2;
-  border-bottom: 10px solid transparent;
-  left: -6px;
-  top: 14px;
+  border-top: 9px solid transparent;
+  border-left: 10px solid #0084d2;
+  border-bottom: 9px solid transparent;
+  top: 19px;
+  left: 1px;
 }
 .north {
   -webkit-transform: rotate(-90deg);
