@@ -24,6 +24,7 @@
 </head>
 
 <body>
+  <div class="laser-pointer"></div>
   <div class="header">
     <img class="header-image" height=120 src='./images/planning.svg'/>
     <div class="header-text">
@@ -49,7 +50,7 @@
         <div class="command-section">
           <div class="controls-section karel-controls">
             <div class="place-karel-button"><img height=30 src='./images/karel.svg'/></div>
-            <div class="karel-explanation-wrapper">Click the map to move Karel, or use the commands below.</div>
+            <div class="karel-explanation-wrapper explanation-wrapper">Click the map to move Karel, or use the commands below.</div>
             <!-- <div>Double click to have Karel follow your mouse (click to stop)</div> -->
           </div>
           <button class="button-move">move() <span class="shortcut">f</span></button>
@@ -69,6 +70,11 @@
         <div class="world-controls">
           <div class="section-title">Change Karel's World</div>
           <div class="controls-section">
+            <div class="explanation-wrapper">
+              Click a button then click the map to add beepers and walls.
+            </div>
+          </div>
+          <div class="controls-section condensed">
             <div class="place-beeper-button"></div>
             <div class="beeper-buttons-wrapper">
               <button class="add-beeper-button">Add beepers</button>
@@ -76,7 +82,7 @@
             </div>
           </div>
           <div class="controls-section">
-            <div class="place-wall-button"></div>
+            <div class="place-wall-button condensed"></div>
             <div class="wall-buttons-wrapper">
               <button class="add-wall-button">Add walls</button>
               <button class="remove-wall-button">Remove walls</button>
@@ -89,6 +95,14 @@
             </div>
             <button class="update-world-size-button">Set dimensions</button>
           </div>
+        </div>
+        <div class="bonus-controls">
+          <div class="section-title">Bonus</div>
+          <div class="controls-section">
+            <button class="laser-button">Laser pointer</button>
+            <button class="highlight-squares">Highlight squares</button>
+          </div>
+
         </div>
         <div class="footer-section">
           <div class="section-title">About</div>

@@ -55,7 +55,7 @@ input:focus {
   background-clip: padding-box;
 }
 .footer-section {
-  margin-top: 16px;
+  margin-top: 30px;
 }
 .footer-section .footer-content {
   color: black;
@@ -64,6 +64,9 @@ input:focus {
 }
 .footer-section .footer-content p {
   margin-top: -2px;
+}
+.bonus-controls {
+  margin-top: 12px;
 }
 .header {
   font-weight: 400;
@@ -191,6 +194,9 @@ input:focus {
   -ms-justify-content: center;
   justify-content: center;
 }
+.square.highlighted-square {
+  background-color: yellow;
+}
 button {
   padding: 0;
   border: none;
@@ -231,7 +237,8 @@ button.ongoing {
   color: white;
   background-color: #333;
 }
-.button-turn-around {
+.button-turn-around,
+button.highlight-squares {
   margin-left: 4px;
 }
 .square:first-child {
@@ -275,6 +282,14 @@ button.ongoing {
   -o-transform: rotate(-45deg);
   font-size: 14px;
 }
+.explanation-wrapper {
+  font-size: 13px;
+  font-weight: 400;
+  padding-right: 12px;
+}
+.explanation-wrapper.karel-explanation-wrapper {
+  margin-left: 8px;
+}
 .controls-section {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -289,12 +304,6 @@ button.ongoing {
   margin-bottom: 16px;
   font-size: 13px;
 }
-.controls-section .karel-explanation-wrapper {
-  margin-left: 8px;
-  font-size: 13px;
-  font-weight: 400;
-  padding-right: 8px;
-}
 .controls-section .beeper-buttons-wrapper,
 .controls-section .wall-buttons-wrapper {
   margin-left: 16px;
@@ -308,6 +317,9 @@ button.ongoing {
 }
 .controls-section.beeper-bag-section .beepers-in-bag-count {
   margin-right: 4px;
+}
+.controls-section.condensed {
+  margin-bottom: 12px;
 }
 .world-controls {
   display: -webkit-flex;
@@ -474,6 +486,23 @@ button.ongoing {
   border-bottom: 9px solid transparent;
   top: 19px;
   left: 1px;
+}
+.laser-pointer {
+  display: none;
+  position: absolute;
+  color: red;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  height: 12px;
+  width: 12px;
+  background-color: red;
+  box-shadow: 0 0 50px red, 0 0 10px 3px red;
+  z-index: 9999;
+  pointer-events: none;
 }
 .north {
   -webkit-transform: rotate(-90deg);
