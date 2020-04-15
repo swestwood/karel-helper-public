@@ -70,6 +70,13 @@
         <div class="world-controls">
           <div class="section-title">Change Karel's World</div>
           <div class="controls-section">
+            <div class="choose-world-wrapper">
+              <div class="explanation-wrapper">Choose or upload a world: </div>
+              <select class="select-available-world" size=1></select>
+              <input type="file" class="upload-map" accept=".w">
+            </div>
+          </div>
+          <div class="controls-section">
             <div class="explanation-wrapper">
               Click a button then click the map to add beepers and walls.
             </div>
@@ -102,10 +109,6 @@
             <button class="laser-button">Laser pointer</button>
             <button class="highlight-squares">Highlight squares</button>
           </div>
-
-        </div>
-        <div class="footer-section">
-          <div class="section-title">About</div>
           <div class="footer-content">
             <p><a href="https://compedu.stanford.edu/karel-reader/docs/python/en/chapter1.html" target="_blank">Karel the Robot</a> is used in <a href="https://engineering.stanford.edu/news/free-coding-education-time-covid-19" target="_blank">CS106A Code in Place</a> and other intro programming courses.</p>
             <p>Karel Helper is an interactive tool where students and teachers can visualize their approaches and problem-solve remotely. Send bugs or feature requests <a href="https://github.com/swestwood/karel-helper-public/issues" target="_blank">here</a>!</p><p>- Sophia Westwood</p>
