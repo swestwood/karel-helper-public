@@ -57,13 +57,14 @@ input:focus {
 .footer-content {
   color: black;
   font-size: 12px;
-  margin-top: 10px;
+  margin-top: 36px;
+  padding-right: 12px;
 }
 .footer-content p {
   margin-top: -2px;
 }
 .bonus-controls {
-  margin-top: 12px;
+  margin-top: 16px;
 }
 .select-available-world {
   margin-top: 8px;
@@ -71,6 +72,7 @@ input:focus {
 }
 input[type="file"].upload-map {
   border: 0px;
+  padding: 0px;
 }
 .header {
   font-weight: 400;
@@ -140,8 +142,11 @@ input[type="file"].upload-map {
   font-size: 13px;
   margin-bottom: 16px;
 }
+.bonus-controls .section-title {
+  margin-bottom: 14px;
+}
 .sidebar {
-  width: 240px;
+  width: 300px;
 }
 .sidebar .command-section {
   display: -webkit-flex;
@@ -241,8 +246,7 @@ button.ongoing {
   color: white;
   background-color: #333;
 }
-.button-turn-around,
-button.highlight-squares {
+.button-turn-around {
   margin-left: 4px;
 }
 .square:first-child {
@@ -313,7 +317,7 @@ button.highlight-squares {
   margin-left: 16px;
 }
 .controls-section.beeper-bag-section {
-  margin-top: 12px;
+  margin-top: 8px;
   margin-bottom: 0px;
 }
 .controls-section.beeper-bag-section .beeper-bag-label {
@@ -334,7 +338,7 @@ button.highlight-squares {
   -ms-flex-direction: column;
   flex-direction: column;
   font-size: 13px;
-  margin-top: 28px;
+  margin-top: 36px;
 }
 .world-controls .place-beeper-button {
   -webkit-transform: rotate(45deg);
@@ -391,28 +395,14 @@ button.highlight-squares {
   display: -ms-flexbox;
   display: -ms-flex;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  margin-right: 8px;
 }
 .world-controls .dimensions-input .dimension-input {
-  width: 75px;
   font-weight: 400;
   margin-top: -1px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: -ms-flex;
-  display: flex;
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  -webkit-justify-content: space-between;
-  -ms-justify-content: space-between;
-  justify-content: space-between;
+  margin-right: 4px;
+}
+.world-controls .update-world-size-button {
+  margin-left: 4px;
 }
 .wall {
   border-color: #333;
@@ -465,7 +455,7 @@ button.highlight-squares {
   -webkit-align-items: flex-end;
   -ms-align-items: flex-end;
   align-items: flex-end;
-  margin-left: 240px;
+  margin-left: 300px;
   margin-bottom: 4px;
   color: #f20000;
   min-height: 28px;

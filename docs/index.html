@@ -59,8 +59,10 @@
             <button class="button-turn-right">turn_right() <span class="shortcut">s</span></button>
             <button class="button-turn-around">turn_around() <span class="shortcut">a</span></button>
           </div>
-          <button class="button-put-beeper">put_beeper() <span class="shortcut">r</span></button>
-          <button class="button-pick-beeper">pick_beeper() <span class="shortcut">e</span></button>
+          <div class="beeper-commands">
+            <button class="button-put-beeper">put_beeper() <span class="shortcut">r</span></button>
+            <button class="button-pick-beeper">pick_beeper() <span class="shortcut">e</span></button>
+          </div>
           <div class="controls-section beeper-bag-section">
             <input class="beepers-in-bag-count" type="text" size=8></input>
             <div class="beeper-bag-label">beepers in bag</div>
@@ -85,7 +87,7 @@
             <div class="place-beeper-button"></div>
             <div class="beeper-buttons-wrapper">
               <button class="add-beeper-button">Add beepers</button>
-              <button class="remove-beeper-button">Remove</button>
+              <button class="remove-beeper-button">Remove beepers</button>
             </div>
           </div>
           <div class="controls-section">
@@ -106,12 +108,14 @@
         <div class="bonus-controls">
           <div class="section-title">Bonus</div>
           <div class="controls-section">
-            <button class="laser-button">Laser pointer</button>
-            <button class="highlight-squares">Highlight squares</button>
+            <div class="bonus-buttons">
+              <button class="laser-button">Laser pointer <span class="shortcut">g</span></button>
+              <button class="highlight-squares">Highlighter <span class="shortcut">h</span></button>
+            </div>
           </div>
           <div class="footer-content">
             <p><a href="https://compedu.stanford.edu/karel-reader/docs/python/en/chapter1.html" target="_blank">Karel the Robot</a> is used in <a href="https://engineering.stanford.edu/news/free-coding-education-time-covid-19" target="_blank">CS106A Code in Place</a> and other intro programming courses.</p>
-            <p>Karel Helper is an interactive tool where students and teachers can visualize their approaches and problem-solve remotely. Send bugs or feature requests <a href="https://github.com/swestwood/karel-helper-public/issues" target="_blank">here</a>!</p><p>- Sophia Westwood</p>
+            <p>Karel Helper is an interactive tool where students and teachers can visualize problem-solving approaches, even remotely. Send bugs or feature requests <a href="https://github.com/swestwood/karel-helper-public/issues" target="_blank">here</a>!</p><p>- Sophia Westwood</p>
           </div>
         </div>
       </div>
